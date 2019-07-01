@@ -1,0 +1,8 @@
+com\nnf\config\SpringWebConfig.class
+com\nnf\controller\ControllerTemplate.class
+com\nnf\dto\DomainTransferObjectTemplate.class
+com\nnf\domain\DomainObjectTemplate.class
+com\nnf\adapter\AdapterTemplate.class
+com\nnf\Application.class
+com\nnf\repository\RepositoryTemplate.class
+com\nnf\service\ServiceTemplate.class

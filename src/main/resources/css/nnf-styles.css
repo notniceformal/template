@@ -1,0 +1,60 @@
+/**
+ * Copyright 2019 NOTNICEFORMAL PTY LTD. All Rights Reserved.
+ */
+
+html, body {
+  font-family: 'Roboto', 'Helvetica', sans-serif;
+}
+.mdl-navigation__link {
+  font-weight: 700;
+}
+.mdl-card {
+  min-width: 100%;
+  max-width: 100%;
+}
+.mdl-card__actions {
+  border-color: rgba(255, 255, 255, 0.2);
+}
+.mdl-card__title {
+  min-height: 245px;
+}
+.mdl-card__title-error {
+  align-items: flex-start;
+  background:
+    url('../images/error.png') bottom right 15% no-repeat;
+}
+.mdl-card__title-warning {
+  align-items: flex-start;
+  background:
+    url('../images/warning.png') bottom right 15% no-repeat;
+}
+.mdl-card__title-template {
+  align-items: flex-start;
+  background:
+    url('../images/template.png') bottom right 15% no-repeat;
+}
+.mdl-card__title-info {
+  align-items: flex-start;
+  background:
+    url('../images/info.png') bottom right 15% no-repeat;
+}
+.mdl-textfield__label {
+  font-weight: bold;
+}
+.mdl-textfield__error {
+  font-style: italic;
+}
+.mdl-card__actions {
+  display: flex;
+  box-sizing:border-box;
+  align-items: center;
+}
+.mdl-card__actions > .material-icons {
+  padding-right: 10px;
+}
+.center-items {
+  justify-content: center;
+}
+.mdl-data-table{
+  min-width: 100%;
+}
