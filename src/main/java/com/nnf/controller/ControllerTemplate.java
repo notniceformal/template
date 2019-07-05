@@ -8,10 +8,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.ControllerAdvice;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.*;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -20,7 +17,6 @@ import java.util.Date;
 import java.util.List;
 
 @Controller
-@ControllerAdvice
 public class ControllerTemplate {
 
     @Autowired
@@ -29,12 +25,6 @@ public class ControllerTemplate {
     private static Logger logger = LoggerFactory.getLogger(ControllerTemplate.class);
 
     @GetMapping("/")
-    public String home(Model model) {
-
-        return "redirect:/templates";
-    }
-
-    @GetMapping("/templates")
     public String serveTemplate(Model model) {
 
         if (!model.containsAttribute("templateForm")) {
@@ -45,7 +35,7 @@ public class ControllerTemplate {
         return "template-form";
     }
 
-    @PostMapping("/templates")
+    @PostMapping("/")
     public String saveTemplate(@ModelAttribute DomainTransferObjectTemplate dtoForm, Model model) {
 
         DomainObjectTemplate rowEntry = serviceTemplate.saveTemplate(dtoForm);
@@ -116,13 +106,5 @@ public class ControllerTemplate {
 
         return "error";
     }
-
-//    @ModelAttribute("allTemplates")
-//    public List<DomainTransferObjectTemplate> addAllTemplates() {
-//
-//        List<DomainTransferObjectTemplate> templateDTOs = serviceTemplate.allTemplates();
-//
-//        return templateDTOs;
-//    }
 
 }
