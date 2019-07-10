@@ -12,9 +12,6 @@ html, body {
   min-width: 100%;
   max-width: 100%;
 }
-.mdl-card__actions {
-  border-color: rgba(255, 255, 255, 0.2);
-}
 .mdl-card__title {
   min-height: 245px;
 }
@@ -57,4 +54,120 @@ html, body {
 }
 .mdl-data-table{
   min-width: 100%;
+}
+/**
+Header colors
+*/
+.nnf-color--header {
+	background-color: rgb(151, 18, 89)!important
+}
+.nnf-color--header-contrast {
+	background-color: rgb(245, 245, 245)!important
+}
+.nnf-color-text--header {
+	color: rgb(151, 18, 89)!important
+}
+.nnf-color-text--header-contrast {
+	color: rgb(245, 245, 245)!important
+}
+/**
+Form/Submit button colors
+*/
+.nnf-color--submit {
+	background-color: rgb(80, 18, 151)!important
+}
+.nnf-color--submit-contrast {
+	background-color: rgb(245, 245, 245)!important
+}
+.nnf-color-text--submit {
+	color: rgb(80, 18, 151)!important
+}
+.nnf-color-text--submit-contrast {
+	color: rgb(245, 245, 245)!important
+}
+/**
+Card colors
+*/
+.nnf-color--card {
+	background-color: rgb(18, 151, 147)!important
+}
+.nnf-color--card-contrast {
+	background-color: rgb(245, 245, 245)!important
+}
+.nnf-color-text--card {
+	color: rgb(18, 151, 147)!important
+}
+.nnf-color-text--card-contrast {
+	color: rgb(245, 245, 245)!important
+}
+/**
+Card Alternative colors
+*/
+.nnf-color--card-alt {
+	background-color: rgb(147, 18, 151)!important
+}
+.nnf-color--card-alt-contrast {
+	background-color: rgb(245, 245, 245)!important
+}
+.nnf-color-text--card-alt {
+	color: rgb(147, 18, 151)!important
+}
+.nnf-color-text--card-alt-contrast {
+	color: rgb(245, 245, 245)!important
+}
+/**
+Error colors
+*/
+.nnf-color--error {
+	background-color: rgb(255, 114, 96)!important
+}
+.nnf-color--error-contrast {
+	background-color: rgb(66, 66, 66)!important
+}
+.nnf-color-text--error {
+	color: rgb(255, 114, 96)!important
+}
+.nnf-color-text--error-contrast {
+	color: rgb(66, 66, 66)!important
+}
+/**
+Warning/Info colors
+*/
+.nnf-color--info {
+	background-color: rgb(255, 245, 195)!important
+}
+.nnf-color--info-contrast {
+	background-color: rgb(66, 66, 66)!important
+}
+.nnf-color-text--info {
+	color: rgb(255, 245, 195)!important
+}
+.nnf-color-text--info-contrast {
+	color: rgb(66, 66, 66)!important
+}
+/**
+Success colors
+*/
+.nnf-color--success {
+	background-color: rgb(155, 215, 213)!important
+}
+.nnf-color--success-contrast {
+	background-color: rgb(66, 66, 66)!important
+}
+.nnf-color-text--success {
+	color: rgb(155, 215, 213)!important
+}
+.nnf-color-text--success-contrast {
+	color: rgb(66, 66, 66)!important
+}
+/**
+Card
+    box-shadow: h-offset v-offset blur spread color;
+*/
+.mdl-card {
+	box-sizing: border-box;
+	box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, .14);
+}
+.mdl-textfield__label {
+    color: inherit;
 }
